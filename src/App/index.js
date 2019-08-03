@@ -1,11 +1,15 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
+import WelcomeMessage from "./WelcomeMessage";
+import styled from 'styled-components';
 
-function Index() {
-  return (
-    <div>Hello World!</div>
-
-  );
+class App extends Component {
+  render() {
+    return (
+        <div>
+          <WelcomeMessage/>
+        </div>
+    );
+  }
 }
-
-export default Index;
+export default App;
