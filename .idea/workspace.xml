@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88b1ca48-23fe-4fd7-b99e-352c582f2b1a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/App/AppProvider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Settings/ConfirmButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Settings/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App/AppBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/AppBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/AppProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/AppProvider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/WelcomeMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Settings/WelcomeMessage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,6 +31,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/App/test.js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -36,9 +40,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="coverage" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/App/test.js" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cawel\WebstormProjects\cryptodash\src\Settings" />
       <recent name="C:\Users\cawel\WebstormProjects\cryptodash\src\App" />
     </key>
   </component>
@@ -68,6 +75,10 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Debug Application" />
+      <item itemvalue="npm.npm start" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -79,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1564855066407</updated>
-      <workItem from="1564855069993" duration="11578000" />
+      <workItem from="1564855069993" duration="29273000" />
     </task>
     <servers />
   </component>
