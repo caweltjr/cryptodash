@@ -9,7 +9,7 @@ const ConfirmButtonStyled = styled.div`
 `;
 
 export const CenterDiv = styled.div`
-    display: grid:
+    display: grid;
     justify-content: center;
 `;
 
