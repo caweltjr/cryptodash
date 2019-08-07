@@ -13,6 +13,7 @@ export class AppProvider extends React.Component {
         this.state = {
             page: 'dashboard',
             favorites: ['BTC','ETC','XMR','DOGE'],
+            timeInterval: 'months',
             ...this.savedSettings(),
             addCoin: this.addCoin,
             removeCoin: this.removeCoin,
@@ -20,7 +21,8 @@ export class AppProvider extends React.Component {
             setPage: this.setPage,
             confirmFavorites: this.confirmFavorites,
             setCurrentFavorite: this.setCurrentFavorite,
-            setFilteredCoins: this.setFilteredCoins
+            setFilteredCoins: this.setFilteredCoins,
+            changeChartSelect: this.changeChartSelect
         }
     }
 
@@ -48,7 +50,7 @@ export class AppProvider extends React.Component {
         let historical = [
             {name:this.state.currentFavorite,
              data: results.map((ticker, index) => [
-                 moment().subtract({months: TIME_UNITS - index}).valueOf(),
+                 moment().subtract({[this.state.timeInterval]: TIME_UNITS - index}).valueOf(),
                  ticker.USD
              ])
             }
@@ -61,11 +63,16 @@ export class AppProvider extends React.Component {
         for(let units = TIME_UNITS; units > 0; units--){
             promises.push(cc.priceHistorical(this.state.currentFavorite,
                 'USD',
-                    moment().subtract({months: units}).toDate(),
+                    moment().subtract({[this.state.timeInterval]: units}).toDate(),
                 {})
             )
         }
         return Promise.all(promises);
+    }
+
+    changeChartSelect = (value) => {
+        console.log(value);
+        this.setState({timeInterval:value, historical:null}, this.fetchHistorical);
     }
 
     prices = async () => {
