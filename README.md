@@ -1,3 +1,5 @@
+A React.js project that will produce this dashboard and functionality.
+
 ![image](https://user-images.githubusercontent.com/9030569/109393528-23de3900-78d7-11eb-8924-fecfd8e9a6f2.png)
 
 
